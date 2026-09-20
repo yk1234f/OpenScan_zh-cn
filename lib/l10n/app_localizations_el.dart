@@ -491,6 +491,12 @@ class AppLocalizationsEl extends AppLocalizations {
   String get page_size => 'Μέγεθος σελίδας';
 
   @override
+  String get page_size_letter => 'Letter';
+
+  @override
+  String get page_size_legal => 'Legal';
+
+  @override
   String get all_pages => 'Όλες οι σελίδες';
 
   @override
