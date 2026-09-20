@@ -331,14 +331,14 @@ class _ExportSheetState extends State<ExportSheet> {
         ),
         const SizedBox(height: OSSpace.sm),
         if (_format == ExportFormat.pdf)
-          _MetaRow(
-            label: l10n.page_size,
-            value: _pageSize.label,
-            onTap: () => setState(() {
-              _pageSize = ExportPageSize.values[
-                  (_pageSize.index + 1) % ExportPageSize.values.length];
-            }),
-          ),
+        _MetaRow(
+          label: l10n.page_size,
+          value: _pageSize.label(l10n),
+          onTap: () => setState(() {
+            _pageSize = ExportPageSize.values[
+                (_pageSize.index + 1) % ExportPageSize.values.length];
+          }),
+        ),
         _MetaRow(
           label: widget.imagesSelected ? l10n.selected_pages : l10n.all_pages,
           value: l10n.pages_count(pages.length),
