@@ -94,14 +94,16 @@ extension on ExportQuality {
 }
 
 extension on ExportPageSize {
-  String get label {
+  String label(AppLocalizations l10n) {
     switch (this) {
       case ExportPageSize.a4:
         return 'A4';
+
       case ExportPageSize.letter:
-        return 'Letter';
+        return l10n.page_size_letter;
+
       case ExportPageSize.legal:
-        return 'Legal';
+        return l10n.page_size_legal;
     }
   }
 
