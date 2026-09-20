@@ -486,6 +486,12 @@ class AppLocalizationsHi extends AppLocalizations {
   String get page_size => 'पृष्ठ आकार';
 
   @override
+  String get page_size_letter => 'Letter';
+
+  @override
+  String get page_size_legal => 'Legal';
+
+  @override
   String get all_pages => 'सभी पृष्ठ';
 
   @override

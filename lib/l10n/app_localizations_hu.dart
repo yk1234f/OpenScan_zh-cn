@@ -487,6 +487,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get page_size => 'Oldalméret';
 
   @override
+  String get page_size_letter => 'Letter';
+
+  @override
+  String get page_size_legal => 'Legal';
+
+  @override
   String get all_pages => 'Minden oldal';
 
   @override
