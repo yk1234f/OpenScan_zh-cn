@@ -7,12 +7,12 @@ import 'package:flutter/material.dart';
 /// have.
 class L10n {
   static final all = [
+    const Locale('zh'),
     const Locale('en'),
     const Locale('el'),
     const Locale('hi'),
     const Locale('hu'),
     const Locale('pl'),
     const Locale('ta'),
-    const Locale('zh'),
   ];
 }
