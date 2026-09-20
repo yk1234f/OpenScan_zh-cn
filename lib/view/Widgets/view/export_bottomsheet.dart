@@ -333,7 +333,7 @@ class _ExportSheetState extends State<ExportSheet> {
         if (_format == ExportFormat.pdf)
           _MetaRow(
             label: l10n.page_size,
-            value: _pageSize.label,
+            value: _pageSize.label(l10n),
             onTap: () => setState(() {
               _pageSize = ExportPageSize.values[
                   (_pageSize.index + 1) % ExportPageSize.values.length];
