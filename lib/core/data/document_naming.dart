@@ -62,7 +62,6 @@ bool isGeneratedDocumentName(String name) =>
 /// nothing behind: a name made entirely of punctuation.
 String exportFileName(String documentName, {DateTime? now}) {
   final cleaned = documentName
-      .replaceAll(RegExp(r'[^A-Za-z0-9 _-]'), '')
       .trim()
       .replaceAll(RegExp(r'\s+'), '_');
   return cleaned.isEmpty ? defaultDocumentName(now ?? DateTime.now()) : cleaned;
